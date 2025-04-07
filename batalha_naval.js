@@ -1,3 +1,5 @@
+/**Estou preparando meu projeto para as alterações */
+
 const teclado = require('prompt-sync')({ sigint: true });
 let jogoFinalizado = false;
 
