@@ -36,23 +36,23 @@ while (!jogoFinalizado) {
         quantidadeTiros--;  
 
         if (tabuleiro[jogadaX][jogadaY] === true) {
-            console.log(" 🔥 BARCO AFUNDADO ");
+            console.log("  BARCO AFUNDADO ");
             tabuleiro[jogadaX][jogadaY] = false;  
             pontos += 10;  
         } else {
-            console.log(" 🌊 TIRO NA ÁGUA ");
+            console.log("  TIRO NA ÁGUA ");
         }
 
         console.log(`Quantidade de tiros restantes: ${quantidadeTiros}`);
         console.log(`Pontuação: ${pontos}`);
-        console.log("*************************************");
+        console.log("------------------------------");
 
         if (quantidadeTiros === 0) {
             console.log(" JOGO FINALIZADO! ");
             if (pontos > 60) {
-                console.log(" 🎉 PARABÉNS, VOCÊ VENCEU ");
+                console.log("  PARABÉNS, VOCÊ VENCEU ");
             } else {
-                console.log(" 💀 QUE PENA, VOCÊ PERDEU ");
+                console.log("  QUE PENA, VOCÊ PERDEU ");
             }
 
             let continuar = teclado("Digite 'n' para jogar novamente ou qualquer outra tecla para sair: ");
